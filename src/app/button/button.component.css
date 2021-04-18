@@ -1,0 +1,8 @@
+.link-button {
+  text-transform: uppercase;
+  border: none;
+  user-select: none !important;
+  margin: auto;
+  justify-self: center;
+  margin-top: 72px;
+}

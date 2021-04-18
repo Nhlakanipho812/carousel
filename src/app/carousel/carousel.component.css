@@ -1,0 +1,206 @@
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 560px;
+  padding: 0px;
+  overflow: hidden;
+}
+li {
+  list-style-type: none;
+}
+.active {
+  top: 0;
+  left: 0;
+  min-width: 368px;
+  font-size: 26px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+  user-select: none;
+  height: 556px !important;
+  transform-origin: center bottom;
+  margin: 10px 10px;
+  box-sizing: border-box;
+  border: 2px solid rgba(150, 150, 150, 0.08);
+  border-radius: 16px 16px 12px 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #ebebeb 100%);
+  border-bottom: 8px solid #ffc300;
+  text-align: center;
+}
+.active .image {
+  box-sizing: border-box;
+  height: 158.33px;
+  width: 158.33px;
+  margin: auto;
+  margin-top: 96px;
+}
+.carousel__container {
+  width: 100%;
+  margin-top: 200px;
+  position: relative;
+}
+.card {
+  border: 1px solid;
+  height: 284px;
+  max-width: 200px;
+  min-width: 200px;
+  flex-basis: 100%;
+  box-sizing: border-box;
+  border: 2px solid rgba(150, 150, 150, 0.08);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #ffffff 0%, #ebebeb 100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12);
+  text-align: center;
+  margin: 5px 10px 5px 10px;
+  transition: 250ms ease-in-out;
+}
+.active {
+  top: 0;
+  left: 0;
+  min-width: 368px;
+  font-size: 26px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+  user-select: none;
+  height: 556px;
+  transform-origin: center bottom;
+  margin: 10px 10px;
+  box-sizing: border-box;
+  border: 2px solid rgba(150, 150, 150, 0.08);
+  border-radius: 16px 16px 12px 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #ebebeb 100%);
+  border-bottom: 8px solid #ffc300;
+  text-align: center;
+}
+.active .text {
+  height: 40px;
+  width: 320px;
+  color: #232323;
+  font-family: "Work Sans";
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  line-height: 58px;
+  text-align: center;
+  margin: auto;
+  margin-top: 90px;
+}
+.link-button {
+  text-transform: uppercase;
+  border: none;
+  user-select: none !important;
+  margin: auto;
+  justify-self: center;
+  margin-top: 72px;
+  font-size: 16px;
+  width: 100%;
+}
+.icon {
+  margin-top: -3px;
+  margin-left: 2px;
+}
+
+.active .hidden {
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+.icon-pic {
+  font-size: 90px;
+  margin: auto;
+  margin-left: -66px;
+  color: #232323;
+}
+.active .icon-pic {
+  font-size: 155px;
+  margin-left: -122px;
+}
+
+.card:hover {
+  top: 0;
+  left: 0;
+  font-size: 26px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+  user-select: none;
+  transform-origin: center bottom;
+  margin: 10px 10px;
+  box-sizing: border-box;
+  border-radius: 16px 16px 12px 12px;
+  background: linear-gradient(180deg, #373737 0%, #191919 100%);
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -moz-transition: -moz-transform 0.5s ease;
+  transition: transform 0.5s ease-in-out;
+  transition: left, right linear 0.25s;
+  border: none;
+  border-bottom: 8px solid #ffc300;
+}
+
+.card:hover .text,
+.card:hover .icon-pic,
+.card:hover .link-button {
+  color: #fff;
+}
+.button_next {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #232323;
+  color: #fff;
+  border: none;
+  position: absolute;
+  right: 32%;
+  top: 484px;
+}
+
+.button_next:hover {
+  background-color: #ffc300;
+  color: #232323;
+}
+.button_prev {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #232323;
+  color: #fff;
+  border: none;
+  position: absolute;
+  top: 484px;
+}
+@media screen and (max-width: 481px) {
+  .button_prev {
+    left: 1px;
+  }
+  .button_next {
+    right: 1px;
+  }
+}
+@media screen and (min-width: 481px) {
+  .button_prev {
+    left: 12%;
+  }
+  .button_next {
+    right: 12%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .button_prev {
+    left: 15%;
+  }
+  .button_next {
+    right: 15%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .button_prev {
+    left: 32%;
+  }
+  .button_next {
+    right: 32%;
+  }
+}
+.button_prev:hover {
+  background-color: #ffc300;
+  color: #232323;
+}

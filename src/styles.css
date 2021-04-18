@@ -1,178 +1,41 @@
-/* You can add global styles to this file, and also import other style files 
-@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
-@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
-*/
-@import "~swiper/swiper-bundle";
 body,
 html {
   padding: 0;
   margin: 0;
   position: relative;
-  height: 100%;
-}
-/* .swiper-wrapper {
-} */
-
-.swiper-container {
-  width: 90%;
-  margin: 50px auto;
-  overflow: auto;
-  height: 640px;
 }
 
-.swiper-slide {
-  top: 0;
-  left: 0;
-  min-width: 200px;
-  font-size: 26px;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.87);
-  user-select: none;
-  height: 284px;
-  transform-origin: center bottom;
-  margin: 10px 10px;
-  box-sizing: border-box;
-  border: 2px solid rgba(150, 150, 150, 0.08);
-  border-radius: 16px 16px 12px 12px;
-  background: linear-gradient(180deg, #ffffff 0%, #ebebeb 100%);
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-/* .swiper-slide:nth-of-type(5n) {
-  top: 0;
-  left: 0;
-  min-width: 368px;
-  font-size: 26px;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.87);
-  user-select: none;
-  height: 556px;
-  transform-origin: center bottom;
-  margin: 10px 10px;
-  box-sizing: border-box;
-  border: 2px solid rgba(150, 150, 150, 0.08);
-  border-radius: 16px 16px 12px 12px;
-  background: linear-gradient(180deg, #ffffff 0%, #ebebeb 100%);
-  border-bottom: 8px solid #ffc300;
-  text-align: center;
-} */
-/* .swiper-slide:hover {
-  box-sizing: border-box;
-  border: none;
-  border-radius: 16px 16px 12px 12px;
-  background: linear-gradient(180deg, #373737 0%, #191919 100%);
-  border-bottom: 8px solid #ffc300;
-  color: #fff !important;
-} */
-.swiper-slide:hover {
-  top: 0;
-  left: 0;
-  min-width: 368px;
-  font-size: 26px;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.87);
-  user-select: none;
-  height: 556px;
-  transform-origin: center bottom;
-  margin: 10px 10px;
-  box-sizing: border-box;
-  border: 2px solid rgba(150, 150, 150, 0.08);
-  border-radius: 16px 16px 12px 12px;
-  background: linear-gradient(180deg, #373737 0%, #191919 100%);
-  border-bottom: 8px solid #ffc300;
-  text-align: center;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  -moz-transition: -moz-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: left, right linear 0.25s;
-}
-.swiper-slide:hover .get-device-small {
-  color: #fff !important;
-}
-.swiper-slide:hover .start-here {
-  color: #fff !important;
-}
-.swiper-slide:hover .get-device {
-  color: #fff !important;
-}
-.start-here {
-  color: #000;
+.text {
+  height: 72px;
+  width: 120px;
+  margin: auto;
+  margin-top: 44px;
+  color: #232323;
   font-family: "Work Sans";
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 0.2px;
-  line-height: 32px;
-  margin-top: 72px;
-  display: none;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  text-align: center;
 }
-/* .swiper-slide:nth-of-type(5n) .start-herex {
-  display: block;
+.home-internet {
+  color: #232323;
+  font-family: "Work Sans";
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  text-align: center;
 }
-.swiper-slide:nth-of-type(5n) .image-container {
-  display: block;
-}
-.swiper-slide:nth-of-type(5n) .image-container {
-  display: block;
-}
-.swiper-slide:nth-of-type(5n) .image-container-small {
-  display: none;
-}
-.swiper-slide:nth-of-type(5n) .get-device {
-  display: block;
-}
-.swiper-slide:nth-of-type(5n) .get-device-small {
-  display: none;
-} */
-.swiper-slide:hover .start-here {
-  display: block;
-}
-.swiper-slide:hover .image-container {
-  display: block;
-}
-.swiper-slide:hover .image-container {
-  display: block;
-}
-.swiper-slide:hover .image-container-small {
-  display: none;
-}
-.swiper-slide:hover .get-device {
-  display: block;
-}
-.swiper-slide:hover .get-device-small {
-  display: none;
-}
-
-.image-container {
-  box-sizing: border-box;
-  height: 158.33px;
-  width: 158.33px;
-  border: 1px solid #979797;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 96px;
-  display: none;
-}
-.image-container-small {
-  box-sizing: border-box;
-  height: 79px;
-  width: 79px;
-  border: 1px solid #979797;
-  margin-left: auto;
-  margin-right: auto;
+.image {
+  height: 80px;
+  width: 80px;
+  margin: auto;
   margin-top: 56px;
 }
-
-.get-device {
-  color: #000;
-  font-family: "Work Sans";
-  font-size: 40px;
-  font-weight: 600;
-  letter-spacing: -0.2px;
-  line-height: 58px;
-  text-align: center;
+.hidden {
   display: none;
-  width: 220px;
-  margin: auto;
-  margin-top: 50px;
+}
+.icon {
+  margin-top: -2px;
 }
