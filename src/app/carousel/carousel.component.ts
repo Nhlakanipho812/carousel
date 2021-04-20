@@ -22,11 +22,12 @@ export class CarouselComponent implements OnInit {
         currentSlide?.classList.remove('current__slide');
         nextSlide?.classList.add('current__slide');
         currentSlide?.classList.remove('active');
-        nextSlide?.classList.add('active');
 
         const firstChild = track.firstChild;
         firstChild?.remove();
         track.appendChild(firstChild as Node);
+
+        nextSlide?.classList.add('active');
       });
       prev?.addEventListener('click', (e) => {
         const currentSlide = track.querySelector('.current__slide');
@@ -35,11 +36,11 @@ export class CarouselComponent implements OnInit {
         currentSlide?.classList.remove('current__slide');
         prevSlide?.classList.add('current__slide');
         currentSlide?.classList.remove('active');
-        prevSlide?.classList.add('active');
 
         const lastChild = track.lastChild;
         lastChild?.remove();
         track.prepend(lastChild as Node);
+        prevSlide?.classList.add('active');
       });
     }
   }

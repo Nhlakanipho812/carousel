@@ -2,7 +2,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 560px;
+  height: 600px;
   padding: 0px;
   overflow: hidden;
 }
@@ -52,7 +52,8 @@ li {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12);
   text-align: center;
   margin: 5px 10px 5px 10px;
-  transition: 250ms ease-in-out;
+  transition: 100ms ease-in-out;
+  position: relative;
 }
 .active {
   top: 0;
@@ -69,7 +70,6 @@ li {
   border: 2px solid rgba(150, 150, 150, 0.08);
   border-radius: 16px 16px 12px 12px;
   background: linear-gradient(180deg, #ffffff 0%, #ebebeb 100%);
-  border-bottom: 8px solid #ffc300;
   text-align: center;
 }
 .active .text {
@@ -115,6 +115,9 @@ li {
   font-size: 155px;
   margin-left: -122px;
 }
+.active .active__link {
+  display: block;
+}
 
 .card:hover {
   top: 0;
@@ -133,8 +136,20 @@ li {
   -moz-transition: -moz-transform 0.5s ease;
   transition: transform 0.5s ease-in-out;
   transition: left, right linear 0.25s;
-  border: none;
+}
+.active:hover {
+  border: 2px solid rgba(150, 150, 150, 0.08);
+}
+.active__link {
   border-bottom: 8px solid #ffc300;
+  border-radius: 16px 16px 12px 12px;
+  min-width: 367.3px;
+  max-width: 367.3px;
+  height: 50px;
+  position: absolute;
+  bottom: -1.5px;
+  left: -1.8px;
+  display: none;
 }
 
 .card:hover .text,
@@ -167,21 +182,33 @@ li {
   border: none;
   position: absolute;
   top: 484px;
+  left: 32%;
 }
-@media screen and (max-width: 481px) {
-  .button_prev {
-    left: 1px;
-  }
-  .button_next {
-    right: 1px;
-  }
+.question {
+  position: absolute;
+  left: 29%;
+  top: 75px;
+  height: 80px;
+  width: 157px;
+  color: #232323;
+  font-family: "Work Sans";
+  font-size: 24px;
+  letter-spacing: -0.2px;
+  line-height: 28px;
 }
-@media screen and (min-width: 481px) {
+.question > p > span {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 481px) and (max-width: 769px) {
   .button_prev {
     left: 12%;
   }
   .button_next {
     right: 12%;
+  }
+  .question {
+    left: 1%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -191,13 +218,18 @@ li {
   .button_next {
     right: 15%;
   }
-}
-@media screen and (min-width: 1024px) {
-  .button_prev {
-    left: 32%;
+  .question {
+    left: 10%;
   }
-  .button_next {
-    right: 32%;
+}
+@media screen and (min-width: 1025px) and (max-width: 1649px) {
+  .question {
+    left: 10%;
+  }
+}
+@media screen and (min-width: 1750) {
+  .question {
+    left: 30%;
   }
 }
 .button_prev:hover {
