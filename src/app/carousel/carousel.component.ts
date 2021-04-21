@@ -27,7 +27,9 @@ export class CarouselComponent implements OnInit {
         firstChild?.remove();
         track.appendChild(firstChild as Node);
 
-        nextSlide?.classList.add('active');
+		nextSlide?.classList.add('active');
+		
+		
       });
       prev?.addEventListener('click', (e) => {
         const currentSlide = track.querySelector('.current__slide');

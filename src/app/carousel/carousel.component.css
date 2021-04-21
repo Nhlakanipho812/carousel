@@ -52,8 +52,9 @@ li {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12);
   text-align: center;
   margin: 5px 10px 5px 10px;
-  transition: 100ms ease-in-out;
+  transition: 600ms ease-in-out;
   position: relative;
+  transform: translateX(-20px);
 }
 .active {
   top: 0;
@@ -84,6 +85,8 @@ li {
   text-align: center;
   margin: auto;
   margin-top: 90px;
+  transition: 600ms ease-in-out;
+  position: relative;
 }
 .link-button {
   text-transform: uppercase;
@@ -104,6 +107,8 @@ li {
   display: block;
   display: flex;
   justify-content: center;
+  transition: 600ms ease-in-out;
+  position: relative;
 }
 .icon-pic {
   font-size: 90px;
@@ -114,9 +119,11 @@ li {
 .active .icon-pic {
   font-size: 155px;
   margin-left: -122px;
+  position: relative;
 }
 .active .active__link {
   display: block;
+  transition: 600ms ease-in-out;
 }
 
 .card:hover {
@@ -150,6 +157,55 @@ li {
   bottom: -1.5px;
   left: -1.8px;
   display: none;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .card:hover .text,
